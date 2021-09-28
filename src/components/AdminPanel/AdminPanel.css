@@ -1,0 +1,9 @@
+.footer{
+    display: flex;
+}
+.whitebackground{
+    background-color: white;
+  }
+.greybackground{
+    background-color: grey;
+}

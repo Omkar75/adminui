@@ -1,0 +1,26 @@
+input[name=fullName] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 3px;
+    box-sizing: border-box;
+  }
+  input[name=email] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 3px;
+    box-sizing: border-box;
+  }
+  input[name=role] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 3px;
+    box-sizing: border-box;
+  }
+  .Addbutton{
+    height:  2.8rem;
+    width: 8rem;
+    border: none;
+    background-color: #c83349;
+    color: white;
+    border-radius: 10px;
+  }

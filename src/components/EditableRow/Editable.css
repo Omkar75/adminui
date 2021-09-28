@@ -1,0 +1,21 @@
+.Editable{
+    background-color: #ddd;
+}
+.savebutton{
+    padding: 5px;
+    border: none;
+    background-color: #c83349;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    width: 3rem;
+}
+.cancelbutton{
+    padding: 5px;
+    border: none;
+    background-color: #c83349;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    width: 3rem;
+}
