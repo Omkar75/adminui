@@ -1,38 +1,41 @@
 import React from "react";
 import './Editable.css'
-const EditableRow = ({addFormData, handleAddFormChange, handleCancelClick}) => {
+const EditableRow = ({EditFormData, handleEditFormChange, handleCancelClick}) => {
   return (
     <tr className="Editable">
       <td>
       </td>
       <td>
         <input
+          className="editableInputs"
           type="text"
           required="required"
           placeholder="Enter a name..."
-          name="fullName"
-          value={addFormData.name}
-          onChange={handleAddFormChange}
+          name="editfullName"
+          value={EditFormData.editfullName}
+          onChange={handleEditFormChange}
         ></input>
       </td>
       <td>
         <input
+        className="editableInputs"
           type="email"
           required="required"
           placeholder="Enter an email..."
-          name="email"
-          value={addFormData.email}
-        onChange={handleAddFormChange}
+          name="editemail"
+          value={EditFormData.editemail}
+        onChange={handleEditFormChange}
         ></input>
       </td>
       <td>
         <input
+        className="editableInputs"
           type="text"
           required="required"
           placeholder="Enter the role..."
-          name="role"
-          value={addFormData.role}
-          onChange={handleAddFormChange}
+          name="editrole"
+          value={EditFormData.editrole}
+          onChange={handleEditFormChange}
         ></input>
       </td>
       <td>

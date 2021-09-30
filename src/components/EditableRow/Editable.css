@@ -17,5 +17,12 @@
     color: white;
     margin: 5px;
     border-radius: 5px;
-    width: 3rem;
+    width: 3.2rem;
 }
+input[class=editableInputs] {
+    width: 100% !important;
+    padding: 5px 5px !important;
+    margin: 8px 3px;
+    box-sizing: border-box;
+    font-size: inherit !important;
+  }

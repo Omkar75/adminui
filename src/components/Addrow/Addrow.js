@@ -4,8 +4,9 @@ const Addrow = ({handleAddFormChange, handleAddFormSubmit}) => {
     return (
         <>
         <h2>Add New User</h2>
-        <form onSubmit={handleAddFormSubmit}>
+        <form onSubmit={handleAddFormSubmit} className="formgrow">
           <input
+            id="fullName"
             type="text"
             name="fullName"
             required="required"
@@ -13,6 +14,7 @@ const Addrow = ({handleAddFormChange, handleAddFormSubmit}) => {
             onChange={handleAddFormChange}
           />
           <input
+            id="email"
             type="email"
             name="email"
             required="required"
@@ -20,6 +22,7 @@ const Addrow = ({handleAddFormChange, handleAddFormSubmit}) => {
             onChange={handleAddFormChange}
           />
           <input
+            id="role"
             type="text"
             name="role"
             required="required"

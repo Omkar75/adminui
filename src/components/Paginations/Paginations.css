@@ -12,7 +12,7 @@
     margin: 10px;
     padding: 5px;
     /* background: whitesmoke; */
-    width: 2vw;
+    width: 2rem;
     height: 2rem;
     border-style: solid;
     border-radius: 50px;
@@ -23,5 +23,11 @@
     align-content: flex-end;
 }
 .page-item ::after{
-    background-color: wheat;
+    background-color: blue;
+}
+@media screen and (max-width: 720px){
+    .page-item{
+
+    }
+
 }

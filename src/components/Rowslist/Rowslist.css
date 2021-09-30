@@ -24,6 +24,9 @@
   background-color: #ff9aab;
   color: white;
 }
+.hscroll {
+  overflow-x: auto; /* Horizontal */
+}
 .AllDeleteButton {
   height:  3rem;
   width: 8rem;
@@ -35,4 +38,5 @@
 .footer {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
