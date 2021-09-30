@@ -1,28 +1,36 @@
-.Editable{
-    background-color: #ddd;
+.Editable {
+  background-color: #ddd;
 }
-.savebutton{
-    padding: 5px;
-    border: none;
-    background-color: #c83349;
-    color: white;
-    margin: 5px;
-    border-radius: 5px;
-    width: 3rem;
+.savebutton {
+  padding: 5px;
+  border: none;
+  background-color: #c83349;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  width: 3rem;
 }
-.cancelbutton{
-    padding: 5px;
-    border: none;
-    background-color: #c83349;
-    color: white;
-    margin: 5px;
-    border-radius: 5px;
-    width: 3.2rem;
+.savebutton:active {
+  transform: scale(0.98);
+  background-color: #e06377;
 }
-input[class=editableInputs] {
-    width: 100% !important;
-    padding: 5px 5px !important;
-    margin: 8px 3px;
-    box-sizing: border-box;
-    font-size: inherit !important;
-  }
+.cancelbutton {
+  padding: 5px;
+  border: none;
+  background-color: #c83349;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  width: 3.2rem;
+}
+.cancelbutton:active {
+  transform: scale(0.98);
+  background-color: #e06377;
+}
+input[class="editableInputs"] {
+  width: 100% !important;
+  padding: 5px 5px !important;
+  margin: 8px 3px;
+  box-sizing: border-box;
+  font-size: inherit !important;
+}

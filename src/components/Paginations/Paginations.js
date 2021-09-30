@@ -5,15 +5,14 @@ const Paginations = ({postsPerPage, totalPosts, paginate}) => {
     for(let i=1; i<=Math.ceil(totalPosts/postsPerPage); i++){
         pageNumbers.push(i);
     }
-    console.log(pageNumbers)
     return (
             <div className="pagination">
                 {pageNumbers.map(number=>(
-                    <a onClick={()=> paginate(number)} href = "!#"  className="page-item">
+                    < button onClick={()=> paginate(number)} className="page-item">
                         <span key={number} className="page-link">
                             {number}
                         </span>
-                    </a>
+                    </button>
                 ))}
             </div>
     )

@@ -1,10 +1,9 @@
 import React from "react";
-import './Editable.css'
-const EditableRow = ({EditFormData, handleEditFormChange, handleCancelClick}) => {
+import "./Editable.css";
+const EditableRow = ({ EditFormData, handleEditFormChange, handleCancelClick,}) => {
   return (
     <tr className="Editable">
-      <td>
-      </td>
+      <td></td>
       <td>
         <input
           className="editableInputs"
@@ -18,18 +17,18 @@ const EditableRow = ({EditFormData, handleEditFormChange, handleCancelClick}) =>
       </td>
       <td>
         <input
-        className="editableInputs"
+          className="editableInputs"
           type="email"
           required="required"
           placeholder="Enter an email..."
           name="editemail"
           value={EditFormData.editemail}
-        onChange={handleEditFormChange}
+          onChange={handleEditFormChange}
         ></input>
       </td>
       <td>
         <input
-        className="editableInputs"
+          className="editableInputs"
           type="text"
           required="required"
           placeholder="Enter the role..."
@@ -39,8 +38,8 @@ const EditableRow = ({EditFormData, handleEditFormChange, handleCancelClick}) =>
         ></input>
       </td>
       <td>
-          <button type="submit" className="savebutton">Save</button>
-          <button type="button" onClick={handleCancelClick} className="cancelbutton">Cancel</button>
+        <button type="submit" className="savebutton">Save</button>
+        <button type="button" onClick={handleCancelClick} className="cancelbutton">Cancel</button>
       </td>
     </tr>
   );

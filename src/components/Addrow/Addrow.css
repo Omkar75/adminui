@@ -1,47 +1,52 @@
-input[name=fullName] {
-    width: 25%;
-    padding: 12px 10px;
-    margin: 8px 3px;
-    box-sizing: border-box;
-    font-size: inherit;
-  }
-  input[name=email] {
-    width: 25%;
-    padding: 12px 10px;
-    margin: 8px 3px;
-    box-sizing: border-box;
-    font-size: inherit;
-  }
-  input[name=role] {
-    width: 25%;
-    padding: 12px 10px;
-    margin: 8px 3px;
-    box-sizing: border-box;
-    font-size: inherit;
-  }
-  .Addbutton{
-    height:  2.8rem;
-    width: 8rem;
-    border: none;
-    background-color: #c83349;
-    color: white;
-    border-radius: 10px;
-  }
-  .formgrow{
-    align-content: center;
-    align-items: center;
-  }
+input[name="fullName"] {
+  width: 25%;
+  padding: 12px 10px;
+  margin: 8px 3px;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+input[name="email"] {
+  width: 25%;
+  padding: 12px 10px;
+  margin: 8px 3px;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+input[name="role"] {
+  width: 25%;
+  padding: 12px 10px;
+  margin: 8px 3px;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+.Addbutton {
+  height: 2.8rem;
+  width: 8rem;
+  border: none;
+  background-color: #c83349;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Addbutton:active {
+  transform: scale(0.98);
+  background-color: #e06377;
+}
+.formgrow {
+  align-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 720px) {
-  input[name=fullName]{
+  input[name="fullName"] {
     width: 100%;
     overflow: hidden;
     font-size: inherit;
   }
-  input[name=email]{
+  input[name="email"] {
     width: 100%;
     font-size: inherit;
   }
-  input[name=role]{
+  input[name="role"] {
     width: 100%;
     font-size: inherit;
   }

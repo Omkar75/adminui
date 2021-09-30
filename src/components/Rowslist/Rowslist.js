@@ -6,7 +6,6 @@ import EditableRow from "../EditableRow/EditableRow";
 
 const Rowslist = ({ filteredUsers, editUserId, handleAllCheckBoxClicked, handleEditClick, handleCheckBoxClicked, 
   EditFormData, handleEditFormChange, handleEditFormSubmit, handleCancelClick, handleDeleteClick, usersInTheRow, userSeachField }) => {
-    console.log("check this out "+userSeachField)
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPrePage] = useState(10);
   let previousPage 
@@ -16,19 +15,11 @@ const Rowslist = ({ filteredUsers, editUserId, handleAllCheckBoxClicked, handleE
     setCurrentPage(1);
   }, [userSeachField]);
   const paginate = (pageNumber) => {
-    console.log("paginate function") 
     previousPage = currentPage;
     setCurrentPage(pageNumber); 
   };
-  const jumpToFirstPage =()=>{
-    console.log("helllo")
-    setCurrentPage(1)
-  }
   const UserItemCreator = ( filteredUsers, indexOfLastPost, indexOfFirstPost, currentPage, usersInTheRow, previousPage ) => {
-    console.log(currentPage)
-    console.log(usersInTheRow)
     if(previousPage !== currentPage) { usersInTheRow.length = 0 }
-    
     return filteredUsers.slice(indexOfFirstPost, indexOfLastPost, usersInTheRow).map((user) => (<>
           {editUserId == user.id ? (
             <EditableRow EditFormData={EditFormData} handleEditFormChange={handleEditFormChange} handleCancelClick={handleCancelClick}/>
@@ -39,8 +30,7 @@ const Rowslist = ({ filteredUsers, editUserId, handleAllCheckBoxClicked, handleE
         </>
       ));
   };
-  
-  return (
+    return (
     <>
     <div className="hscroll">
       <form onSubmit={handleEditFormSubmit}>
@@ -66,7 +56,6 @@ const Rowslist = ({ filteredUsers, editUserId, handleAllCheckBoxClicked, handleE
         <button type="button" className="AllDeleteButton" onClick={() => handleDeleteClick()}>Delete</button>
         <Paginations postsPerPage={postsPrePage} totalPosts={filteredUsers.length} paginate={paginate} />
       </div>
-      {console.log(filteredUsers)}
     </>
   );
 };

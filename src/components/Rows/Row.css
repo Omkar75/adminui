@@ -1,18 +1,26 @@
-.singleEditbutton{
-    padding: 5px;
-    border: none;
-    background-color: #c83349;
-    color: white;
-    margin: 5px;
-    border-radius: 5px;
-    width: 3rem;
+.singleEditbutton {
+  padding: 5px;
+  border: none;
+  background-color: #c83349;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  width: 3rem;
 }
-.singleDeletebutton{
-    padding: 5px;
-    border: none;
-    background-color: #c83349;
-    color: white;
-    margin: 5px;
-    border-radius: 5px;
-    width: 3rem;
+.singleEditbutton:active {
+  transform: scale(0.98);
+  background-color: #e06377;
+}
+.singleDeletebutton {
+  padding: 5px;
+  border: none;
+  background-color: #c83349;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  width: 3rem;
+}
+.singleDeletebutton:active {
+  transform: scale(0.98);
+  background-color: #e06377;
 }

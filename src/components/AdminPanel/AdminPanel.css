@@ -1,9 +1,9 @@
-.footer{
-    display: flex;
+.footer {
+  display: flex;
 }
-.whitebackground{
-    background-color: white;
-  }
-.greybackground{
-    background-color: grey;
+.whitebackground {
+  background-color: white;
+}
+.greybackground {
+  background-color: grey;
 }
